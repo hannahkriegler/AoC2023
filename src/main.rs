@@ -1,8 +1,9 @@
 use AoC23::day01::{self};
+use AoC23::day02::{self};
 
 
 fn main() {
-    let result = day01::run(true);
+    
+    day02::run(true);
 
-    print!("{:?}", result);
 }

@@ -16,7 +16,7 @@ pub fn run(part_two: bool) -> i32 {
     return result;
 }
 
-fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String>
+pub fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String>
 {
     let file = File::open(filename).expect("no such file");
     let buf = BufReader::new(file);
@@ -25,7 +25,7 @@ fn lines_from_file(filename: impl AsRef<Path>) -> Vec<String>
         .collect()
 }
 
-fn ints_from_line(line: &str) -> i32
+pub fn ints_from_line(line: &str) -> i32
 {
     let mut numbers = [0,0];
     let first = line.chars()
