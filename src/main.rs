@@ -5,6 +5,6 @@ use AoC23::day03::{self};
 
 fn main() {
     
-    day03::run(false);
+    day03::run();
 
 }
